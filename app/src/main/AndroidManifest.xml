@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ohadshai.mipmap">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mipmap_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="API_KEY_HERE" />
+
+        <!-- Activities -->
+        <activity
+            android:name=".ui.activities.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ui.activities.SettingsActivity"
+            android:label="@string/general_settings"
+            android:parentActivityName=".ui.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.PlaceDisplayActivity"
+            android:label="@string/place_display_activity_title"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.ImageDisplayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/image_display_activity_title"
+            android:theme="@style/ImageDisplayTheme" />
+
+        <!-- Services -->
+        <service
+            android:name=".services.IpApiFindUserLocationService"
+            android:exported="false" />
+        <service
+            android:name=".services.SaveSearchPlacesPhotosService"
+            android:exported="false" />
+        <service
+            android:name=".services.DeleteLastSearchPlacesPhotosService"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
