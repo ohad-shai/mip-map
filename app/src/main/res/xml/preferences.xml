@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/general_msg_general">
+        <ListPreference
+            android:defaultValue=""
+            android:entries="@array/languages"
+            android:entryValues="@array/languageValues"
+            android:key="pref_language"
+            android:title="@string/settings_language_title" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/unitsOfLength"
+            android:entryValues="@array/unitsOfLengthValues"
+            android:key="pref_unit_of_length"
+            android:title="@string/settings_unit_of_length_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/general_msg_actions">
+        <Preference
+            android:key="pref_erase_favorites"
+            android:summary="@string/settings_erase_all_favorites_summary"
+            android:title="@string/settings_erase_all_favorites_title" />
+        <Preference
+            android:key="pref_erase_search_history"
+            android:summary="@string/settings_erase_all_search_history_summary"
+            android:title="@string/settings_erase_all_search_history_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/general_msg_application">
+        <Preference
+            android:key="pref_rate_app"
+            android:title="@string/main_menu_rate_app" />
+        <Preference
+            android:key="pref_about_app"
+            android:title="@string/general_about" />
+    </PreferenceCategory>
+</PreferenceScreen>

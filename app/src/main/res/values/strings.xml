@@ -1,0 +1,165 @@
+<resources>
+    <!--=============================================== Application ============================================================-->
+    <string name="app_name">Mip Map</string>
+    <string name="app_version">Version 1.0.2</string>
+    <string name="app_about_content">\"Mip Map (Find Places)\" is a project for John Bryce college, developed by Ohad Shai, in January 2017.\n\n\"Mip Map\" lets the user find about places that interests him.</string>
+    <string name="app_about_credits_title">Credits</string>
+    <string name="app_about_credits_content">Application uses the \"Google Maps API\" service.</string>
+    <string name="app_about_developer_title">Developer</string>
+    <string name="app_about_developer_name">Ohad Shai</string>
+
+    <!--=============================================== Activities ===========================================================-->
+    <!-- Activity: Main -->
+    <string name="main_menu_search">Search</string>
+    <string name="main_menu_favorite_places">Favorite Places</string>
+    <string name="main_menu_archive">Archive</string>
+    <string name="main_menu_rate_app">Rate this app</string>
+
+    <!-- Activity: Main ===> Reveal: Favorites -->
+    <string name="main_favorites_empty">No favorite places.</string>
+
+    <!-- Activity: PlaceDisplay-->
+    <string name="place_display_activity_title">Place Profile</string>
+
+    <!-- Activity: ImageDisplay -->
+    <string name="image_display_activity_title">Image</string>
+
+    <!-- Activity: Settings -->
+    <string name="settings_unit_of_length_title">Unit of length</string>
+    <string name="settings_unit_of_length_summary">Choose the unit of length: KM / Miles</string>
+    <string name="settings_unit_of_length_km">Km</string>
+    <string name="settings_unit_of_length_miles">Miles</string>
+    <string name="settings_language_title">Language</string>
+    <string name="settings_erase_all_favorites_title">Erase all favorites</string>
+    <string name="settings_erase_all_favorites_summary">Erases all of your favorite places</string>
+    <string name="settings_erase_all_favorites_confirm">This will erase all of your favorite places.</string>
+    <string name="settings_erase_all_favorites_done">Favorite places deleted.</string>
+    <string name="settings_erase_all_search_history_title">Erase all search history</string>
+    <string name="settings_erase_all_search_history_summary">Erases all of your search history</string>
+    <string name="settings_erase_all_search_history_confirm">This will erase all of your search history.</string>
+    <string name="settings_erase_all_search_history_done">Search history deleted.</string>
+
+    <!-- Activity: (Google Play) -->
+    <string name="activity_google_play_not_found">Install Google Play to perform this action.</string>
+
+    <!--================================================ Fragments ==========================================================-->
+    <!-- Fragment: SearchHistory -->
+    <string name="fragment_search_history_not_found">No search history.</string>
+
+    <!-- Fragment: SearchPlaces -->
+    <string name="fragment_search_places_not_found">No places found.</string>
+
+    <!-- Fragment: LastSearchPlaces -->
+    <string name="fragment_last_search_places_title">Last Search Places</string>
+    <string name="fragment_last_search_places_not_found">No last search places found.</string>
+
+    <!--================================================= Dialogs ==========================================================-->
+    <!-- Dialog: PermissionExplanationDialog -->
+    <string name="dialog_permission_explanation_title">Permission Required</string>
+
+    <!-- Dialog: ServiceErrorDialog -->
+    <string name="dialog_service_error_title">Oops!</string>
+    <string name="dialog_service_error_message">The service is temporarily unavailable, please contact the developer for further information.</string>
+
+    <!-- Dialog: NetworkErrorDialog -->
+    <string name="dialog_network_error_title">Network error</string>
+    <string name="dialog_network_error_message">Please turn on network connection to proceed.</string>
+    <string name="dialog_network_error_message_for_map">Please turn on network connection to load map resources.</string>
+
+    <!-- Dialog: PlaceTypeSelectDialog -->
+    <string name="dialog_place_type_search_hint">Search place types…</string>
+    <string name="dialog_place_type_validation">Select a place type…</string>
+
+    <!--=================================================== Items ==========================================================-->
+    <!-- Item: Place -->
+    <string name="item_place_image">Place Image</string>
+    <string name="item_place_address">Place Address</string>
+    <string name="item_place_rating">Rating</string>
+    <string name="item_place_distance">Place Distance</string>
+    <string name="item_place_icon">Place Icon</string>
+
+    <!--================================================== General =========================================================-->
+    <!-- General Actions -->
+    <string name="general_about">About</string>
+    <string name="general_settings">Settings</string>
+    <string name="general_select_all">Select All</string>
+    <string name="general_done">Done</string>
+    <string name="general_add">Add</string>
+    <string name="general_delete">Delete</string>
+    <string name="general_favorite">Favorite</string>
+    <string name="general_unfavorite">Undo Favorite</string>
+    <string name="general_share">Share</string>
+    <string name="general_locate_me">Locate Me</string>
+    <string name="general_show_on_map">Show on map</string>
+
+    <!-- General Buttons -->
+    <string name="general_btn_ok">OK</string>
+    <string name="general_btn_cancel">Cancel</string>
+    <string name="general_btn_reset">Reset</string>
+    <string name="general_btn_proceed">Proceed</string>
+    <string name="general_btn_close">Close</string>
+    <string name="general_btn_remove">Remove</string>
+    <string name="general_btn_yes">Yes</string>
+    <string name="general_btn_no">No</string>
+    <string name="general_btn_undo">Undo</string>
+    <string name="general_btn_create">Create</string>
+    <string name="general_btn_select">Select</string>
+    <string name="general_btn_wait">Wait</string>
+    <string name="general_btn_save">Save</string>
+    <string name="general_btn_allow">Allow</string>
+    <string name="general_btn_enable">Enable</string>
+    <string name="general_btn_refresh">Refresh</string>
+    <string name="general_btn_exit_search">Exit Search</string>
+
+    <!-- General Messages -->
+    <string name="general_msg_selected">selected</string>
+    <string name="general_msg_favorited">favorited</string>
+    <string name="general_msg_unfavorited">unfavorited</string>
+    <string name="general_msg_restored">restored</string>
+    <string name="general_msg_unavailable">N/A</string>
+    <string name="general_msg_no_results">No Results.</string>
+    <string name="general_msg_are_you_sure">Are you sure?</string>
+    <string name="general_msg_deleted">deleted</string>
+    <string name="general_msg_warning">Warning</string>
+    <string name="general_msg_loading">Loading…</string>
+    <string name="general_msg_action">Action:</string>
+    <string name="general_msg_allow_permission">Allow Permission</string>
+    <string name="general_msg_enable_gps">Enable GPS to show your location.</string>
+    <string name="general_msg_general">General</string>
+    <string name="general_msg_actions">Actions</string>
+    <string name="general_msg_application">Application</string>
+    <string name="general_msg_update_play_services">Update Google Play Services to proceed.</string>
+    <string name="general_msg_unavailable_map">Map is unavailable.</string>
+    <string name="general_msg_gps_doesnt_exist">GPS doesn\'t exist on this device.</string>
+    <string name="general_msg_charging">Battery is charging…</string>
+    <string name="general_msg_not_charging">Battery is not charging…</string>
+    <string name="general_msg_share_places">Share places…</string>
+    <string name="general_msg_looking_for_gps">Looking for GPS signal…</string>
+    <string name="general_msg_location_found">Showing your location!</string>
+
+    <!-- General: Permissions -->
+    <string name="permission_location">Location</string>
+    <string name="permission_location_description">Allow access to this device\'s location.</string>
+
+    <!--=================================================== Other =========================================================-->
+    <!-- Search -->
+    <string name="search_hint">Search places…</string>
+    <string name="search_nearby_or_text">Search Nearby / Text</string>
+    <string name="search_invalid">Type text for \"Text Search\", or enable \"Nearby Search\" in \"Search Options\".</string>
+    <string name="search_validation_no_location">Enable GPS to get your location for a \"Nearby Search\".</string>
+    <string name="search_options">Search Options</string>
+    <string name="search_options_nearby">Nearby</string>
+    <string name="search_options_nearby_explanation">Search Nearby</string>
+    <string name="search_options_radius">Search Radius</string>
+    <string name="search_options_place_type">Place Type</string>
+    <string name="search_selection_exit">Exit Selection</string>
+
+    <!-- Units -->
+    <string name="unit_meter">m</string>
+    <string name="unit_kilometer">km</string>
+    <string name="unit_yard">yd</string>
+    <string name="unit_mile">mi</string>
+
+    <!--===================================================================================================================-->
+
+</resources>
