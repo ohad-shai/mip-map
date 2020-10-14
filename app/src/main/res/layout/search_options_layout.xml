@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbarSearchOptions"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#fff"
+    android:theme="@style/AppTheme.SearchBar"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/imgbtnClose"
+            android:layout_toStartOf="@id/imgbtnClose"
+            android:baselineAligned="false"
+            android:gravity="center">
+
+            <FrameLayout
+                android:id="@+id/layoutSearchOptionPlaceType"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_option_unselected_background"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    style="@style/FlatRippleRounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp">
+
+                    <TextView
+                        android:id="@+id/txtSearchOptionPlaceType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="@string/search_options_place_type"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/layoutSearchOptionRadius"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_option_selected_background"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    style="@style/FlatRippleRounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="#00000000"
+                        android:contentDescription="@string/search_options_radius"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/ic_location_searching_white"
+                        android:tint="@color/colorPrimaryDarker" />
+
+                    <TextView
+                        android:id="@+id/txtSearchRadius"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/layoutSearchOptionNearby"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_option_selected_background"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    style="@style/FlatRippleRounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp">
+
+                    <ImageView
+                        android:id="@+id/imgSearchOptionNearby"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="#00000000"
+                        android:contentDescription="@string/search_options_nearby_explanation"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/ic_location_on"
+                        android:tint="@color/colorPrimaryDarker" />
+
+                    <TextView
+                        android:id="@+id/lblSearchOptionNearby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="@string/search_options_nearby"
+                        android:textColor="#666" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imgbtnClose"
+            style="@style/FlatRippleCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:contentDescription="@string/general_btn_close"
+            android:padding="8dp"
+            android:scaleType="center"
+            android:src="@mipmap/ic_close_black"
+            android:tint="#555" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_weight="0"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchPlaceType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/imgbtnClose"
+            android:layout_toStartOf="@id/imgbtnClose"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/dialog_place_type_search_hint"
+            app:closeIcon="@null"
+            app:defaultQueryHint="@string/dialog_place_type_search_hint"
+            app:iconifiedByDefault="false"
+            app:searchHintIcon="@null"
+            app:searchIcon="@null" />
+
+        <ImageButton
+            android:id="@+id/imgbtnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/flat_ripple_circle"
+            android:contentDescription="@string/general_btn_close"
+            android:padding="8dp"
+            android:src="@mipmap/ic_close_black"
+            android:tint="#555" />
+
+    </RelativeLayout>
+
+    <View style="@style/DividerLight" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#fff">
+
+        <RadioGroup
+            android:id="@+id/rgPlaceTypes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+    </ScrollView>
+
+    <View style="@style/DividerLight" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#fff"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btnReset"
+            style="@style/MaterialDialogButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/general_btn_reset"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btnOK"
+            style="@style/MaterialDialogButton"
+            android:layout_width="65sp"
+            android:layout_height="wrap_content"
+            android:text="@string/general_btn_ok"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+</LinearLayout>

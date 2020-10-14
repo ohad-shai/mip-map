@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sheetLastSearchPlaces"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <ImageButton
+        android:id="@+id/imgbtnArrowUp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/last_search_places_bottom_sheet_peek"
+        android:background="@drawable/bottom_sheet_arrow_up_background_transition"
+        android:contentDescription="@string/fragment_last_search_places_title"
+        android:src="@mipmap/ic_keyboard_arrow_up_black_24dp"
+        android:tint="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_card_panel"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0"
+            android:contentDescription="@string/fragment_last_search_places_title"
+            android:src="@mipmap/ic_history_black"
+            android:tint="#666" />
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/fragment_last_search_places_title"
+            android:textColor="#666"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnClose"
+            style="@style/FlatRippleRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/general_btn_close"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/DividerLight"
+        android:background="#ddd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvPlaces"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eee"
+            android:clipToPadding="false"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layoutPlacesEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/fragment_last_search_places_not_found"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_big_search"
+                android:tint="#ccc" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/fragment_search_places_not_found"
+                android:textColor="#ccc"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

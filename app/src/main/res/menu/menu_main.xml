@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionSearch"
+        android:actionViewClass="android.widget.ImageButton"
+        android:icon="@mipmap/ic_search_white"
+        android:title="@string/main_menu_search"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/actionFavoritePlaces"
+        android:icon="@mipmap/ic_favorites_white"
+        android:title="@string/main_menu_favorite_places"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/actionSettings"
+        android:title="@string/general_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionAbout"
+        android:title="@string/general_about"
+        app:showAsAction="never" />
+
+</menu>
