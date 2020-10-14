@@ -8,6 +8,7 @@ Developed as a final project in the Android mobile development course in John Br
 - Google Maps API
 - Google Places API
 - Advanced Android Programming
+- UX
 
 ### Images:
 
